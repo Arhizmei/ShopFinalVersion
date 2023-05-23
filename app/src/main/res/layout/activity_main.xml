@@ -56,7 +56,7 @@
         android:layout_height="wrap_content" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/goodsImage"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
@@ -119,8 +119,8 @@
             android:textSize="25sp"
             android:textColor="@color/black"
             android:layout_below="@+id/quantityTitle"
-            android:layout_marginStart="100dp"
-            android:layout_toRightOf="@+id/priceCurency"
+            android:layout_marginStart="200dp"
+            android:layout_alignParentStart="true"
             android:onClick="DecreaseQuantity" />
 
         <TextView
