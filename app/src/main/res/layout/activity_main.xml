@@ -153,13 +153,13 @@
     </RelativeLayout>
 
     <Button
+        android:id="@+id/btAddToCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add to cart"
         android:layout_marginTop="60sp"
-        android:textColor="@color/black"
-        >
-
+        android:onClick="addToCard"
+        android:text="Add to cart"
+        android:textColor="@color/black">
 
 
     </Button>

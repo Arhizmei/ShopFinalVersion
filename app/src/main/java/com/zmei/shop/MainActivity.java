@@ -3,9 +3,11 @@ package com.zmei.shop;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     HashMap  goodsMap;
     String goodsName;
     double price;
+    EditText userNameEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         mySpinner = findViewById(R.id.mySpinner);
         findViewById(R.id.button1).setOnClickListener(this);
         findViewById(R.id.button2).setOnClickListener(this);
+        userNameEditText = findViewById(R.id.nameEditText);
         createSpinner();
         createMap();
 
@@ -124,6 +128,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
+    }
+    public void addToCard(View view){
+        Order order = new Order();
+        order.userName = userNameEditText.getText().toString();
+        Log.d("printUserName", order.userName);
     }
 
 
