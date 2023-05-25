@@ -3,6 +3,7 @@ package com.zmei.shop;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     ArrayAdapter mySpinnerAdapter;
     HashMap  goodsMap;
     String goodsName;
+
     double price;
     EditText userNameEditText;
 
@@ -147,6 +149,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         startActivity(orderIntent);
 
     }
+
+
+
 
 
 }

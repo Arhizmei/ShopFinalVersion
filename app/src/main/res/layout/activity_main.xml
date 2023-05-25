@@ -159,6 +159,9 @@
         android:layout_marginTop="60sp"
         android:onClick="addToCard"
         android:text="Add to cart"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
         android:textColor="@color/black">
 
 
