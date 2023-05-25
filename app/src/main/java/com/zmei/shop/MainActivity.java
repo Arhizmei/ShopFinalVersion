@@ -132,7 +132,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void addToCard(View view){
         Order order = new Order();
         order.userName = userNameEditText.getText().toString();
-        Log.d("printUserName", order.userName);
+        order.goodsName = goodsName;
+        order.quantity = quantity;
+        order.orderPrice = quantity * price;
+        Log.d("mylog", order.userName);
+        Log.d("mylog", order.goodsName);
+        Log.d("mylog", ""+order.quantity);
+        Log.d("mylog", ""+order.orderPrice);
     }
 
 
